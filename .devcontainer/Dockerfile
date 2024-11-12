@@ -21,7 +21,9 @@ RUN pip install ipykernel jupyter && \
     pip install fastapi && \
     pip install uvicorn && \
     pip install pillow && \
-    pip install python-multipart 
+    pip install python-multipart && \
+    pip install shap && \
+    pip3 install torch torchvision torchaudio
 
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
