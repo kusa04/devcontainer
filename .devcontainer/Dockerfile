@@ -23,7 +23,9 @@ RUN pip install ipykernel jupyter && \
     pip install pillow && \
     pip install python-multipart && \
     pip install shap && \
-    pip3 install torch torchvision torchaudio
+    pip3 install torch && \ 
+    pip install torchvision && \
+    pip install torchaudio
 
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
